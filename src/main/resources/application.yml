@@ -1,0 +1,15 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: MultiTenant
+  datasource:
+    url: 'jdbc:postgresql://10.10.252.169:5432/test?ApplicationName=MultiTenant'
+    username: 'gfy_dev'
+    password: 'gfy_dev'
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    properties:
+      hibernate:
+        hbm2ddl:
+          auto: none
